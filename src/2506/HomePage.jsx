@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import LocationInfo from '../0207/LocationInfo'
+import Navigate from '../0207/Navigate'
 
 function HomePage() {
     return (
@@ -10,6 +12,8 @@ function HomePage() {
             >
                 Hakkımızda
             </NavLink>
+            <LocationInfo/>
+            <Navigate/>
         </div>
     )
 }
