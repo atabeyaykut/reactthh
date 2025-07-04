@@ -1,8 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
+import HomePage2 from './0407/HomePage2'
 import './App.css'
-import HomePage from './2506/HomePage'
-import AboutUs from './2506/AboutUs'
-import NotFound from './2506/NotFound'
+import React from 'react'
+import UserDetail from './0407/UserDetail'
+import FormPage from './0407/FormPage'
 
 // CSR => Client Side Rendering
 // SSR => Server Side Rendering
@@ -12,11 +13,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<HomePage />} />
-        <Route path='/aboutus' element={<AboutUs />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path='/' element={<FormPage />} />
       </Routes>
+
     </>
   )
 }
